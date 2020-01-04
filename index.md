@@ -15,7 +15,7 @@ Jordan (jmorenstein@georgebrown.ca)
 >It's organized by week similarily to your syllabus for your convenience.
 >Questions please contact me at: **insert various ways here**
 
-[Week 01 - Default Params](./lab/material/week-01/ES6-review.html)
+[Week 01 - Default Params](./comp3123/lab/material/week-01/ES6-review.html)
 ===============================================================
 
 *This week we'll be reviewing some of the notable ES6 features that were newly introduced in a recently new version of ECMAScript.*
