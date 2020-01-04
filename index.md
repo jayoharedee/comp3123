@@ -15,7 +15,7 @@ Jordan (jmorenstein@georgebrown.ca)
 >It's organized by week similarily to your syllabus for your convenience.
 >Questions please contact me at: **insert various ways here**
 
-[Week 01 - Default Params](/lab/week-01/ES6-review.html)
+[Week 01 - Default Params](/lab/week-01/ES6-review.md)
 ===============================================================
 
 *This week we'll be reviewing some of the notable ES6 features that were newly introduced in a recently new version of ECMAScript.*
@@ -92,7 +92,7 @@ We'll be Looking at:
 * **QUIZ**
 * **LAB:** Child Processes and Cluster.
 
-[Week 06 - Mongoose In-Depth](/lab/week-06/mongoose-typescript.html)
+[Week 06 - Mongoose In-Depth](/lab/week-06/mongoose-typescript.md)
 ===============================================================
 
 *Working with NoSQL can be tricky so we're going to be taking a close look to see how we can implement validators and other safeguards to reduce any DB errors. We'll also be looking at GraphQL and how it's used on the server side and what problems it can help mitigate.*
