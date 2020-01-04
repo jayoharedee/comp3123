@@ -8,9 +8,7 @@
 [Week 01 - Default Params](./material/week-01/ES6-review.html)
 ===============================================================
 
->This week we'll be reviewing some of the notable ES6 features that were newly introduced in a
-  recently
-  new version of ECMAScript.
+>This week we'll be reviewing some of the notable ES6 features that were newly introduced in a recently new version of ECMAScript.
 
 ##We'll be Looking at:
 
