@@ -1,7 +1,7 @@
 COMP3123 - Full Stack Development
 ==================================
 
-If you have any questions regarding the course material, feedback, need help or have ways in which we can improve this course, please email me.
+If you have any questions regarding the cours/lab, feedba/.htmlck, need help or have ways in which we can improve this course, please email me.
 
 Not sure why something works? Having troubles getting something to work? Not sure how to complete something? Email me.
 
@@ -31,7 +31,7 @@ We'll be Looking at:
 - Classes 
 - Modules 
       
-[Week 02 - Node Review](./material/week-02)
+[Week 02 - Node Review](/lab/week-02/node-review.html)
 ===============================================================
 
 *Let's look at some of the things that make Node special this week and get a refresher of our core concepts.*
@@ -46,7 +46,7 @@ We'll be Looking at:
   * **QUIZ**
   * **LAB:** working with ES6 features
 
-[Week 03 - Node For Networking](./material/week-02)
+[Week 03 - Node For Networking](/lab/week-03/node-for-networking.html)
 ===============================================================
 
 *Node really shines when we have to work with network requests or any kind of I/O operation. This week we'll be looking at Node can be leveraged  *
@@ -61,7 +61,7 @@ We'll be Looking at:
 * **QUIZ**
 * **LAB:** Promises and Async/Await
 
-[Week 04 - Accessing the File System With Node](./material/week-02)
+[Week 04 - Accessing the File System With Node](/lab/week-04/file-system.html)
 ===============================================================
 
 *Unlike vanilla JS, Node allows us to access the underlying filesystem. We will see how we can interact, modify, creat and work with files using Node.*
@@ -78,7 +78,7 @@ We'll be Looking at:
 * **QUIZ**
 * **LAB:** Socket.IO chat app
 
-[Week 05 - MongoDB and Mongoose](./material/week-02)
+[Week 05 - MongoDB and Mongoose](/lab/week-05/mongo.html)
 ===============================================================
 
 *One advantage of working with Node is that our payloads that we'll be interfacing with we'll be nothing more than Plain Old JavaScript Objects (POJO's). We're going to be introducing ourselves to Mongo which is a document store comprised of schema that closely mirrors a JavaScript object. We'll also be looking at Mongoose which is a driver we can import into our source to easily interact with the database.*
@@ -92,7 +92,7 @@ We'll be Looking at:
 * **QUIZ**
 * **LAB:** Child Processes and Cluster.
 
-[Week 06 - Mongoose In-Depth](./material/week-02)
+[Week 06 - Mongoose In-Depth](/lab/week-06/mongoose-typescript.html)
 ===============================================================
 
 *Working with NoSQL can be tricky so we're going to be taking a close look to see how we can implement validators and other safeguards to reduce any DB errors. We'll also be looking at GraphQL and how it's used on the server side and what problems it can help mitigate.*
