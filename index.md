@@ -1,7 +1,4 @@
-<div>
 
-  <div>
-  
   # [Week 01 - Default Params](./lab/week-01/ES6-review.html)
   
   This page will serve as a week-by-week overview of labs, assignments and other work completed in class. It's organized by week similarily to your syllabus for your convenience. Questions please contact me at: **insert various ways here**
@@ -20,10 +17,6 @@
   *   Scoping
   *   Classes
   *   Modules
-  
-  </div>
-  
-  <div>
   
   # [Week 02 - Node Review](./lab/week-02/node-review.html)
   
@@ -44,10 +37,6 @@
   
   *   [Default Params](./labweek-02/node-review.html)
   
-  </div>
-  
-  <div>
-  
   # [Week 03 - Node For Networking](./lab/week-03/node-for-networking.html)
   
   Le'ts get a refresher of our core Node concepts.
@@ -63,13 +52,9 @@
   
   *   Accessing Local Storage
   
-  </div>
-  
-  <div>
-  
   # [Week 04 - MongoDb and Mongoose](./lab/week-04/mongoddb-and-mongoose.html)
   
-  Le'ts review NoSQL Schema and also the drivers we can use to better interface with our database.
+  Let's review NoSQL Schema and also the drivers we can use to better interface with our database.
   
   ## We'll be looking at:
   
@@ -86,11 +71,7 @@
   *   Accessing Local Storage
   
   ### Check the links below for lab related material.
-  
-  </div>
-  
-  <div>
-  
+
   # [Week 05 - Redux Intro](./lab/week-05/redux-intro.html)
   
   We'll be looking at client-side state management this week, some of the problems that state management system like Redux solves and how we can best manage state.
@@ -101,10 +82,7 @@
   *   Redux Basics
   
   ### Check the links below for lab related material.
-  
-  </div>
-  
-  <div>
+
   
   # [Week 06 - Redux Fundamentals](./lab/week-06/redux-fundamentals.html)
   
