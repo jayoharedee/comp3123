@@ -7,8 +7,8 @@
 
 *This week we'll be reviewing some of the notable ES6 features that were newly introduced in a recently new version of ECMAScript.*
 
-##We'll be Looking at:
-
+We'll be Looking at:
+--------------------
 - Default Params 
 - Template Strings 
 - Object Literals html
