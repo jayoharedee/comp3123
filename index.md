@@ -43,8 +43,8 @@ We'll be Looking at:
   * Callbacks
   * Promise
   * Async/Await
-  * **QUIZ**
-  * **LAB:** working with ES6 features
+* **QUIZ**
+* **LAB:** working with ES6 features
 
 [Week 03 - Node For Networking](/lab/week-03/node-for-networking.md)
 ===============================================================
