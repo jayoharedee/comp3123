@@ -115,7 +115,7 @@ document.getElementById('element').addEventListener('click', function() {
 });
 ```
 
-Since JavaScript is lexically scoped, in the above example, `this` would be undefined as with each iteration of the `colours` array, the function changes. When the function changes, so does it's scope because in JavaScript, scope depends on the execution context. The execution context whether global or inside a function, `this` will behave differently.
+Since JavaScript is lexically scoped, in the above example, `this` would be undefined as with each iteration of the `cars` array, the function changes. When the function changes, so does it's scope because in JavaScript, scope depends on the execution context. The execution context whether global or local inside a function, `this` will behave differently.
 
 By assigning `var that = this;` in our event listener, we're able to store and access the value of `this` by referrencing the `that` variable which holds the value of `this` from the functions previous iteration. Using `that`, isn't the best variable name to use in order to hack around how `this` works. Especially in larger functions. In the above example, I may have used the variable name `elementClicked` instead of `that`.
 
@@ -155,7 +155,7 @@ var inheritedScope = {
   }
 }
 ```
-Above is an example of a good use case for an arrow function. ES6 arrow functions can't be bound to the `this` keyword, when `this` is used in an arrow function, it goes searching for it's definition.
+Above in the `inheritedScope` object, there is a good use case for an arrow function. ES6 arrow functions can't be bound to the `this` keyword, when `this` is used in an arrow function, it goes searching for it's definition.
 
 An arrow function does not have its own `this`. The `this` value of the enclosing lexical scope is used; arrow functions follow the normal variable lookup rules. So while searching for `this` which is not present in current scope, an arrow function ends up finding the `this` from its enclosing scope.
 
@@ -171,12 +171,124 @@ In JavaScript there are two types of scope, local and global. Global scope is co
 Variables defined inside a function are in local scope while variables defined outside of a function are in the global scope. Each function when invoked creates a new scope.
 
 
+### Global Scope
+When you start writing JavaScript in a document, you are already in the Global scope. There is only one Global scope throughout a JavaScript document. A variable is in the Global scope if it's defined outside of a function.
 
+```javascript
+// the scope is by defeault global
+// nothing else here, so name would be on the global scope
+var name = 'Douglas Crockford'
+```
+Variables inside the Global scope can be accessed and altered in any other scope.
+
+```javascript
+var name = 'Douglas Crockford'
+console.log(name) // logs 'Douglas Crockford'
+
+function logName() {
+   console.log(name) // 'name' is accessible here and everywhere else
+}
+
+logName() // logs 'Douglas Crockford'
+```
+
+### Local Scope
+Variables defined inside a function are in the local scope. And they have a different scope for every call of that function. This means that variables having the same name can be used in different functions. This is because those variables are bound to their respective functions, each having different scopes, and are not accessible in other functions.
+
+```javascript
+// Global Scope
+function someFunction() {
+  // Local Scope #1
+  function someOtherFunction() {
+    // Local Scope #2
+  }
+}
+
+// Global Scope
+function anotherFunction() {
+  // Local Scope #3
+}
+// Global Scope
+```
+
+### Block Statements
+Block statements like `if` and `switch` conditions or `for` and `while` loops, unlike functions, don't create a new scope. Variables defined inside of a block statement will remain in the scope they were already in.
+
+```javascript
+if (true) {
+  // this 'if' conditional block doesn't create a new scope
+  var name = ''Douglas Crockford''; // name is still in the global scope cause var doesn't block scope
+}
+
+console.log(name); // logs ''Douglas Crockford''
+```
+
+ECMAScript 6 introduced the let and const keywords. These keywords can be used in place of the var keyword.
+
+```javascript
+var name = 'Douglas Crockford';
+
+let likes = 'Coding';
+const skills = 'Javascript and Complaining';
+```
+
+Contrary to the `var` keyword, the `let` and `const` keywords support the declaration of local scope inside block statements.
+
+```javascript
+if (true) {
+  // this 'if' conditional block doesn't create a scope
+
+  // name is in the global scope because of the 'var' keyword
+  var name = 'Douglas Crockford';
+  // likes is in the local scope because of the 'let' keyword
+  let likes = 'Coding';
+  // skills is in the local scope because of the 'const' keyword
+  const skills = 'JavaScript and Complaining';
+}
+
+console.log(name); // logs 'Douglas Crockford'
+console.log(likes); // Uncaught ReferenceError: likes is not defined
+console.log(skills); // Uncaught ReferenceError: skills is not defined
+```
+
+>Global scope lives as long as your application lives. Local Scope lives as long as your functions are called and executed.
+
+### Context
+Many developers often confuse scope and context as if they equally refer to the same concepts. But this is not the case. Scope is what we discussed above and Context is used to refer to the value of this in some particular part of your code. Scope refers to the visibility of variables and context refers to the value of this in the same scope. We can also change the context using function methods, which we will discuss later. In the global scope context is always the Window object.
+
+```javascript
+// logs: Window {speechSynthesis: SpeechSynthesis, caches: CacheStorage, localStorage: Storage…}
+console.log(this);
+
+function logFunction() {
+  console.log(this);
+}
+// logs: Window {speechSynthesis: SpeechSynthesis, caches: CacheStorage, localStorage: Storage…}
+// because logFunction() is not a property of an object
+logFunction(); 
+```
+
+If scope is in the method of an object, context will be the object the method is part of.
+
+### Execution Context
+To remove all confusions and from what we studied above, the word context in Execution Context refers to scope and not context. This is a weird naming convention but because of the JavaScipt specification, we are tied to it.
+
+JavaScript is a single-threaded language so it can only execute a single task at a time. The rest of the tasks are queued in the Execution Context. As I told you earlier that when the JavaScript interpreter starts to execute your code, the context (scope) is by default set to be global. This global context is appended to your execution context which is actually the first context that starts the execution context.
+
+After that, each function call (invocation) would append its context to the execution context. The same thing happens when an another function is called inside that function or somewhere else.
+
+> Each function creates its own execution context
+
+Once the browser is done with the code in that context, that context will then be popped off from the execution context and the state of the current context in the execution context will be transferred to the parent context. The browser always executes the execution context that is at the top of the execution stack (which is actually the innermost level of scope in your code).
+
+> There can only be one global context but any number of function contexts.
+
+<!-- 
   <h2>
     Classes
   </h2>
 
   <h2>
     Modules
-  </h2>
+  </h2> -->
 
