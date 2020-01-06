@@ -31,6 +31,7 @@ We'll be Looking at:
 - Classes 
 - Modules 
       
+* **LAB:** [working with ES6 features](exercises/week-01/Lab1.docx)
 [Week 02 - Node Review](/lab/week-02/node-review.md)
 ===============================================================
 
