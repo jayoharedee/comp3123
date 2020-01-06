@@ -1,4 +1,4 @@
-COMP3123 - Full Stack Development
+COMP3133 - Full Stack Development
 ==================================
 
 If you have any questions regarding the course/lab, feedback, need help or have ways in which we can improve, please email me.
