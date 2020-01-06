@@ -46,7 +46,7 @@ We'll be Looking at:
   * Promise
   * Async/Await
 * **QUIZ**
-* **LAB:** working with ES6 features
+* **LAB:** [working with ES6 features](exercises/week-02/Lab2.docx)
 
 [Week 03 - Node For Networking](/lab/week-03/node-for-networking.md)
 ===============================================================
