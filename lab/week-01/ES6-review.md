@@ -29,16 +29,13 @@ function multiply(a, b) {
 }
 
 // new way to solve this problem
-multiply(5, 2); // 10
-multiply(5);    // 50
-
 function multiply(a, b = 10) {
   return a * b;
 }
 
-multiply(5, 2); // 200
+multiply(5, 3); // 15
 multiply(5);    // 50
-multiply(5, undefined); // 5
+multiply(5, undefined); // 50
 ```
 
 Template Strings

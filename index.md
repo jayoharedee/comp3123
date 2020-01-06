@@ -15,8 +15,8 @@ Jordan (jmorenstein@georgebrown.ca)
 >It's organized by week similarily to your syllabus for your convenience.
 >Questions please contact me at:
 
-Email: jmorenstein@georgebrown.ca
-Wickr: comp3133 
+- Email: jmorenstein@georgebrown.ca
+- Wickr: comp3133 
 
 [Week 01 - Default Params](/lab/week-01/ES6-review.md)
 ===============================================================
