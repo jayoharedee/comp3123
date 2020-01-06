@@ -13,7 +13,10 @@ Jordan (jmorenstein@georgebrown.ca)
 
 >This page will serve as a week-by-week overview of labs, assignments and other work completed in class.
 >It's organized by week similarily to your syllabus for your convenience.
->Questions please contact me at: **insert various ways here**
+>Questions please contact me at:
+
+Email: jmorenstein@georgebrown.ca
+Wickr: comp3133 
 
 [Week 01 - Default Params](/lab/week-01/ES6-review.md)
 ===============================================================
