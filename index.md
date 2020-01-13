@@ -35,8 +35,8 @@ We'll be Looking at:
 - Modules 
       
 - **LAB:** [working with ES6 features](exercises/week-01/Lab1.docx)
-
-[Week 02 - Node Review](/lab/week-02/node-review.md)
+- **LAB:** [working with ES6 features](exercises/week-02/Lab2.docx)
+[Week 02 - Node Review](/lab/week-02/async.md)
 ===============================================================
 
 *Let's look at some of the things that make Node special this week and get a refresher of our core concepts.*
@@ -49,7 +49,7 @@ We'll be Looking at:
   * Promise
   * Async/Await
 * **QUIZ**
-* **LAB:** [working with ES6 features](exercises/week-02/Lab2.docx)
+* **LAB:** [working with ES6 features](exercises/week-02/Lab2-async.docx)
 
 [Week 03 - Node For Networking](/lab/week-03/node-for-networking.md)
 ===============================================================
