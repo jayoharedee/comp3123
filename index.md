@@ -36,6 +36,7 @@ We'll be Looking at:
       
 - **LAB:** [working with ES6 features](exercises/week-01/Lab1.docx)
 - **LAB:** [working with ES6 features](exercises/week-02/Lab2.docx)
+  
 [Week 02 - Node Review](/lab/week-02/async.md)
 ===============================================================
 
