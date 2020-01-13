@@ -1,4 +1,5 @@
-# COMP 3133 - week 02
+# COMP 3133 - week 02 
+## Asynchronisity
 
 Think of PHP. Does the word 'procedural' ring a bell? Wouldn't it be nice if things could happen independently of the applications main thread powering the application? Making things happen independently of a programs main thread is a term known as 'asynchronisity'. When rendering frontend content, asynchronously written code really helps us prevent a page from freezing up or loading slowly. In 2020 being able to deliver rich web content is more important than ever.
 
