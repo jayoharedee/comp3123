@@ -310,3 +310,5 @@ In concurrentStart, both timers are created and then awaited. The timers run con
 However, the await calls still run in series, which means the second await will wait for the first one to finish. In this case, the result of the fastest timer is processed after the slowest.
 
 If you wish to fully perform two or more jobs in parallel, you must use await Promise.all([job1(), job2()]), as shown in the parallel example.
+
+[![What the heck is the event loop?](https://img.youtube.com/vi/8aGhZQkoFbQ/0.jpg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
