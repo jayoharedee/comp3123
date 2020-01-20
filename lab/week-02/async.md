@@ -313,3 +313,7 @@ If you wish to fully perform two or more jobs in parallel, you must use await Pr
 
 # What the heck is the event loop?
 [![What the heck is the event loop?](https://img.youtube.com/vi/8aGhZQkoFbQ/0.jpg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+# In the Loop with Jake Archibald
+[![What the heck is the event loop?](https://img.youtube.com/vi/cCOL7MC4Pl0/0.jpg)](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
+
