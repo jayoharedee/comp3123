@@ -82,7 +82,7 @@ We'll be Looking at:
 * Testing and Debugging
   * Intro to testing with Mocha
 * **QUIZ**
-* **LAB:** Socket.IO chat app
+* **LAB:** [working with ES6 features](exercises/week-04/Lab4.pdf)
 
 [Week 05 - MongoDB and Mongoose](/lab/week-05/mongo.md)
 ===============================================================
