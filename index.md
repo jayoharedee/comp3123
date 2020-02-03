@@ -83,8 +83,8 @@ We'll be Looking at:
   * Intro to testing with Mocha
 * **QUIZ**
 * **LAB:** [working with ES6 features](exercises/week-04/Lab4.pdf)
-
-[Week 05 - MongoDB and Mongoose](/lab/week-05/mongo.md)
+* **Data to seed your DB:** [seed data](exercises/week-04/Restaurant-Seed-Data.txt)
+[Week 05 - MongoDB and Mongoose](/lab/week-05/)
 ===============================================================
 
 *One advantage of working with Node is that our payloads that we'll be interfacing with we'll be nothing more than Plain Old JavaScript Objects (POJO's). We're going to be introducing ourselves to Mongo which is a document store comprised of schema that closely mirrors a JavaScript object. We'll also be looking at Mongoose which is a driver we can import into our source to easily interact with the database.*
@@ -96,9 +96,9 @@ We'll be Looking at:
   * Query and sorting with Mongoose
   * Methods and statics
 * **QUIZ**
-* **LAB:** Child Processes and Cluster.
+* **LAB:** [Mongo Challenges](/lab/week-06/Lab5.docx))
 
-[Week 06 - Mongoose In-Depth](/lab/week-06/mongoose-typescript.md)
+[Week 06 - Mongoose In-Depth](/lab/week-06)
 ===============================================================
 
 *Working with NoSQL can be tricky so we're going to be taking a close look to see how we can implement validators and other safeguards to reduce any DB errors. We'll also be looking at GraphQL and how it's used on the server side and what problems it can help mitigate.*
