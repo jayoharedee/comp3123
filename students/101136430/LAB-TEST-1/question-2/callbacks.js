@@ -14,8 +14,8 @@ const rejectedPromise = () => {
         setTimeout(() => {
             try {
                 resolve({ 'error': 'delayed exception!' });
-            } catch (error) {
-                reject(error);
+            } catch (e) {
+                console.error(e)
             }
         }, 500)
     })

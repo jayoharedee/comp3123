@@ -5,7 +5,7 @@ const makelowerCase = item => { return item.toLowerCase(); }
 const lowerCaseWords = (array) =>
     new Promise((resolve, reject) => {
         if (array) {
-            const result = array.filter(word => typeof word == 'string');
+            const result = array.filter(word => typeof word === 'string');
             resolve(result.map(makelowerCase))
         } else {
             reject("Error!")
