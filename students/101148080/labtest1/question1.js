@@ -8,7 +8,7 @@ const lowerCaseWords = (arr) => {
                 newArray.push(arr[i].toLowerCase())
             }
         }
-        if (strArray.length != 0) {
+        if (newArray.length != 0) {
             resolve(newArray)
         } else {
             reject('their is an error')
