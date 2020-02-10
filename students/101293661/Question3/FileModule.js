@@ -5,19 +5,17 @@ const logsPath = path.join(__dirname, '\\Logs');
 // Remove Log files
 async function unlinkingLogs() {
     if (fs.existsSync(logsPath)) {
-        function readDir() {
             fs.readdir(logsPath, (err, files) => {
                 console.log('Files to delete:');
                 files.forEach(file => console.log(file));
+                const unlinkFiles = () => {
+                    fs.unlink(logsPath + '\\' + files, function (error) {
+                        if (error) console.log(error);
+                    });
+                };
+                unlinkFiles();
             });
-            const unlinkFiles = () => {
-                fs.unlink(logsPath + '\\' + files, function (error) {
-                    if (error) console.log(error);
-                });
-            };
-            readDir();
-            unlinkFiles();
-        }
+
         // insert await here so the directory is empty when fs.rmdir is called
         fs.rmdir(logsPath, function (error) {
             if (error) {
