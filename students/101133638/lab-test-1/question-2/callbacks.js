@@ -1,5 +1,4 @@
 // Question 2: Promises
-
 // Given the script file callbacks.js, write a script that does the following:
 // - Create a method resolvedPromise that is similar to delayedSuccess and resolves
 //   a message after a timeout of 500ms.
