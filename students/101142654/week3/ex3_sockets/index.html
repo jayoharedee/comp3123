@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.io</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  </head>
+  <body>
+    
+    <script>
+     
+      var socket;
+
+      $( document ).ready(function() {
+        console.log( "ready!" );
+
+        	//make connection
+        socket = io.connect('http://localhost:8080')
+    
+      });
+      
+      //CLIENT
+      const connect = () => {  }  
+      const disconnect = () => { }
+      const send = () => { socket.emit('send', "Hello Server! - from client"); };
+      
+
+
+      
+    </script>
+    
+    <h1>Socket.io Lab</h1>
+    <button id="connect" onClick='connect()'/>Connect</button>
+    <button id="disconnect" onClick='disconnect()'>Disconnect</button>
+    <button id="send" onClick='send()'/>Send Message</button>
+  </body>
+</html>
