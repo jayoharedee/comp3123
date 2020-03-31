@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Socket.io</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+
+</head>
+
+<!-- <script src="/socket.io/socket.io/js"></script> -->
+
+<script>
+
+  var socket;//= io.connect('http://localhost:3000');
+
+  $(document).ready(function () {
+    console.log("ready!");
+    socket = io.connect('http://localhost:3000');
+    // socket.on('connect', () => {
+    //   socket.connect();
+    //   socket.emit('client connect', { message: 'Connection accepted' });
+    // });
+  });
+
+  const connect = () => {
+    socket.connect();
+    socket.emit('client connect', { message: 'Connection accepted' });
+    alert('connect click');
+  }
+
+  const disconnect = () => {
+    socket.emit('client disconnect', { message: 'client is disconneted!...' });
+    socket.disconnect();
+    alert('disconnect click');
+  }
+
+  const send = () => {
+    socket.emit('send message', { message: 'Received message: Hello server - from client...' });
+    alert('send click')
+  };
+
+</script>
+
+<body>
+  <h1>Socket.io Lab</h1>
+  <button id="connect" onClick='connect()' />Connect</button>
+  <button id="disconnect" onClick='disconnect()'>Disconnect</button>
+  <button id="send" onClick='send()' />Send Message</button>
+</body>
+
+</html>
