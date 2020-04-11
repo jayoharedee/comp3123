@@ -1,1 +1,0 @@
-File log name: log1.txt
