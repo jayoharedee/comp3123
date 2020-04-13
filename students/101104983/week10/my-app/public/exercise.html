@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      .button {
+        background-color: #174e7d;
+        border-radius: 5px;
+        color: #fff;
+        display: inline-block;
+        margin-bottom: 5px;
+        padding: 5px 15px;
+        text-decoration: none;
+      }
+    </style>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Match This</h1>
+    <div class="box">
+      <div>
+        <a href="#" class="button">Button</a>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero.
+        </div>
+      </div>
+    </div>
+
+    <h1>Your Implementation</h1>
+    <div id="impl" class="box" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+
+    <script type="text/babel">
+      var ipsumText =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.";
+        const buttonStyle = {
+            //key must be camelCased, get rid of hyphens
+            backgroundColor: '#174e7d',
+            borderRadius: '5px',
+            color: '#fff',
+            display: 'inline-block',
+            marginBottom: '5px',
+            padding: '5px 15px',
+            textDecoration: 'none'
+        }
+      // your code goes here..
+      ReactDOM.render(
+        <div>
+            <a href="#" style={buttonStyle}>Button</a>
+            <div>
+                {ipsumText}
+            </div>
+        </div>, document.getElementById("impl"));
+    </script>
+  </body>
+</html>
